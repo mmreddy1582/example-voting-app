@@ -1,6 +1,6 @@
 FROM java:openjdk-8-jdk-alpine
 USER root
-RUN yum -y install wget tar zip unzip maven
+RUN yum -y install wget tar zip unzip
 RUN MAVEN_VERSION=3.3.3 \
  && cd /usr/share \
  && wget http://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz -O - | tar xzf - \
